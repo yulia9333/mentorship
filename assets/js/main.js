@@ -60,6 +60,9 @@ const CONFIG = {
   form.addEventListener("input", function (event) {
     var field = event.target.closest(".field");
     if (field) field.classList.remove("invalid");
+    if (event.target.name === "agree") {
+      document.getElementById("field-consent").classList.remove("invalid");
+    }
     if (status) status.textContent = "";
   });
 
@@ -70,6 +73,7 @@ const CONFIG = {
     var email = form.elements.email.value.trim();
     var telegram = form.elements.telegram.value.trim();
     var consent = form.elements.agree.checked;
+    var marketingConsent = form.elements.marketing.checked;
 
     var validName = setInvalid("field-name", name.length < 2);
     var validEmail = setInvalid("field-email", !emailPattern.test(email));
@@ -97,7 +101,9 @@ const CONFIG = {
       email: email,
       telegram: telegram.charAt(0) === "@" ? telegram : "@" + telegram,
       product: "Индивидуальное наставничество для практикующих тарологов",
-      price: "360000 RUB"
+      price: "360000 RUB",
+      legalConsent: true,
+      marketingConsent: marketingConsent
     };
 
     var saveLead = CONFIG.LEAD_ENDPOINT

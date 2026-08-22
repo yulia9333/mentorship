@@ -9,7 +9,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="Индивидуальное наставничество — Vitaliy Vivant">
   <meta property="og:description" content="10 недель практической работы с опытным мастером Таро.">
-  <meta property="og:image" content="assets/img/vitaliy-studio.jpg">
+  <meta property="og:image" content="assets/img/vitaliy-vivant-circle.jpg">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' rx='24' fill='%23142334'/%3E%3Cpath d='M100 20 112.6 69.5 156.6 43.4 130.5 87.4 180 100 130.5 112.6 156.6 156.6 112.6 130.5 100 180 87.4 130.5 43.4 156.6 69.5 112.6 20 100 69.5 87.4 43.4 43.4 87.4 69.5Z' fill='none' stroke='%23d0aa51' stroke-width='6'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,12 +45,11 @@
           <a class="button button-primary reveal" href="#application">Записаться на наставничество <span aria-hidden="true">↓</span></a>
         </div>
 
-        <div class="hero-visual reveal" aria-label="Vitaliy Vivant за работой с картами Таро">
+        <div class="hero-visual reveal" aria-label="Vitaliy Vivant, наставник">
           <div class="portrait-frame">
-            <img src="assets/img/vitaliy-studio.jpg" width="1122" height="1402" alt="Vitaliy Vivant за столом с колодой карт">
+            <img src="assets/img/vitaliy-vivant-circle.jpg" width="1290" height="2796" alt="Vitaliy Vivant с колодой карт">
           </div>
-          <div class="session-count" aria-label="10 еженедельных созвонов"><b>10</b><span>созвонов</span></div>
-          <div class="card-fan" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p class="portrait-caption"><span>Vitaliy Vivant</span><small>Paris · 23 года практики</small></p>
         </div>
       </div>
       <div class="hero-strip" aria-hidden="true"><span>10 недель</span><span>ежедневная практика</span><span>личная работа</span></div>
@@ -126,10 +125,6 @@
 
     <section class="section mentor" aria-label="О наставнике">
       <div class="wrap mentor-grid">
-        <figure class="mentor-photo reveal">
-          <img src="assets/img/vitaliy-portrait.jpg" width="700" height="875" alt="Портрет Vitaliy Vivant">
-          <figcaption>Paris · Tarot · Psychology</figcaption>
-        </figure>
         <div class="mentor-copy">
           <p class="mentor-name reveal">Vitaliy Vivant</p>
           <div class="mentor-facts">
@@ -191,10 +186,17 @@
             <p class="error">Укажите юзернейм в Telegram.</p>
           </div>
 
-          <label class="consent" id="field-consent">
-            <input type="checkbox" name="agree" required>
-            <span>Даю согласие на обработку персональных данных на условиях страницы <a href="privacy.html" target="_blank" rel="noopener">«Персональные данные»</a> и принимаю <a href="offer.html" target="_blank" rel="noopener">публичную оферту</a>.</span>
-          </label>
+          <div class="consent-list">
+            <label class="consent consent-required" id="field-consent">
+              <input type="checkbox" name="agree" aria-describedby="consentError" required>
+              <span>Даю согласие на обработку моих персональных данных на условиях <a href="privacy.html" target="_blank" rel="noopener">Политики обработки персональных данных</a> и <a href="offer.html" target="_blank" rel="noopener">оферты</a>.</span>
+            </label>
+            <p class="consent-error" id="consentError">Это обязательное поле.</p>
+            <label class="consent consent-optional">
+              <input type="checkbox" name="marketing">
+              <span>Даю согласие на получение рекламных и информационных рассылок.</span>
+            </label>
+          </div>
 
           <button class="button button-primary button-block" type="submit">Перейти к оплате <span aria-hidden="true">→</span></button>
           <p class="form-note">После заполнения формы вы перейдете на защищенную страницу оплаты.</p>
